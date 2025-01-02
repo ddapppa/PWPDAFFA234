@@ -1,14 +1,12 @@
-/* style.css */
 
-/* Gunakan font yang enak dibaca */
 body {
     font-family: "Roboto", Arial, sans-serif;
-    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+    background-color: #f8f9fa;
     margin: 0;
     padding: 0;
   }
   
-  /* Navbar styling */
+
   .navbar {
     margin-bottom: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -17,29 +15,18 @@ body {
     font-weight: 600;
   }
   
-  /* Container utama */
+
   .container {
     margin-top: 40px;
   }
   
-  /* Heading */
+
   h2 {
     margin-bottom: 20px;
     font-weight: 700;
     color: #343a40;
   }
   
-  /* Card style opsional jika ingin bungkus form/dashboard dalam card
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  */
-  
-  /* Form input & label */
   .form-label {
     font-weight: 600;
     margin-bottom: 6px;
@@ -59,7 +46,7 @@ body {
     opacity: 0.9;
   }
   
-  /* Tabel */
+
   .table thead th {
     background-color: #e9ecef;
     font-weight: 700;
@@ -72,7 +59,7 @@ body {
     vertical-align: middle;
   }
   
-  /* Button di tabel */
+
   .btn-warning {
     margin-right: 5px;
   }
@@ -80,13 +67,13 @@ body {
     margin-right: 5px;
   }
   
-  /* Alert styling */
+
   .alert {
     margin-bottom: 20px;
     border-radius: 0.375rem;
   }
   
-  /* Link hover */
+
   a:hover {
     text-decoration: none;
   }
