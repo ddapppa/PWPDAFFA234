@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Edit User</h2>
+<form method="POST" action="{{ url_for('edit_user', user_id=user.id) }}">
+  <div class="mb-3">
+    <label for="username">Username:</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      class="form-control"
+      value="{{ user.username }}"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="role">Role:</label>
+    <input
+      type="text"
+      id="role"
+      name="role"
+      class="form-control"
+      value="{{ user.role }}"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="email">Email:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      class="form-control"
+      value="{{ user.email }}"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="password">Password (biarkan kosong jika tidak ingin ganti):</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      class="form-control"
+    />
+  </div>
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}
