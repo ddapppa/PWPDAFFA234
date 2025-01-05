@@ -4,7 +4,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
 
-load_dotenv() 
+load_dotenv()  # Memuat variabel dari .env
 
 db = SQLAlchemy()
 
@@ -19,7 +19,7 @@ def create_app():
     db.init_app(app)
 
     with app.app_context():
-        from models import User 
+        from models import User  # Pastikan model diimpor setelah db diinisialisasi
         db.create_all()
 
     return app
