@@ -6,6 +6,10 @@ from models import User
 
 app = create_app()
 
+# -------------------
+# Routing
+# -------------------
+
 @app.route('/')
 def index():
     if 'user_id' in session:
@@ -132,6 +136,8 @@ def logout():
     session.clear()
     return redirect(url_for('login'))
 
-
+# -------------------
+# Main
+# -------------------
 if __name__ == '__main__':
     app.run(debug=True)
