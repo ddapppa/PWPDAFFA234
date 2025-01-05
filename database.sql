@@ -1,0 +1,1 @@
+SELECT * FROM my_flask_db.user;
